@@ -1,0 +1,7 @@
+version: 2
+
+seeds:
+  - name: store_locations
+    config:
+      column_names:
+        area_id: TEXT

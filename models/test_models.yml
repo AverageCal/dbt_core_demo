@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: sales_clean
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+models:
+  - name: high_low_view
+    columns:
+      - name: price
+        tests:
+          - not_null
+models:
+  - name: only_highs
+    columns:
+      - name: high_low
+        tests:
+          - not_null
